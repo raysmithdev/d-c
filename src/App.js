@@ -5,11 +5,11 @@ import { API_BASE_URL } from './config'
 
 class App extends Component {
 
-  // componentDidMount() {
-  //   fetch(`${API_BASE_URL}/test`)
-  //   .then(res => res.json())
-  //   .then(data => console.log(data))
-  // }
+  componentDidMount() {
+    fetch(`${API_BASE_URL}/test`)
+    .then(res => console.log(res))
+    .then(data => console.log(data))
+  }
 
   render() {
     return (
