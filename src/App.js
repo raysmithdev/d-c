@@ -1,8 +1,16 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { API_BASE_URL } from './config'
 
 class App extends Component {
+
+  componentDidMount() {
+    fetch(`${API_BASE_URL}/test`)
+    .then(res => res.json())
+    .then(data => console.log(date))
+  }
+  
   render() {
     return (
       <div className="App">
