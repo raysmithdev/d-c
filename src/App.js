@@ -7,7 +7,7 @@ class App extends Component {
 
   componentDidMount() {
     fetch(`${API_BASE_URL}/test`)
-    .then(res => console.log(res))
+    .then(res => res.json())
     .then(data => console.log(data))
   }
 
